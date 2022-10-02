@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
 
@@ -15,22 +14,18 @@ function App() {
   
   return (
     <div>
-
       <h3>Heart rate limits calculator</h3>
-
       <form>
         <div>
           <label>Age</label>
           <input type="number" value={age} onChange={e => setAge(e.target.value)} />
         </div>
-
         <div>
           <label>Heart rate limits </label>
           <output>{bpmL.toFixed(0)}-{bpmU.toFixed(0)}</output>
         </div>
           <button type="button" onClick={calculate}>Calculate</button>
       </form>
-      
     </div>
   )
 }
